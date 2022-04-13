@@ -1,4 +1,4 @@
-package FuckingSpring;
+package exersise;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,17 +20,27 @@ public class TestSpring {
 //       musicPlayer.playMusic();
 //       musicPlayer2.playMusic();
 
-//
 
 
         Computer computer = context.getBean("computer",Computer.class);
 
 
-
-                System.out.println(computer);
+        System.out.println(computer);
 
 
         context.close();
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 

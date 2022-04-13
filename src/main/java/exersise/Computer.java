@@ -1,4 +1,4 @@
-package FuckingSpring;
+package exersise;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,8 +15,12 @@ public class Computer {
         this.musicPlayer = musicPlayer;
     }
 
+
+
     @Override
     public String toString() {
-        return "Playing: " + musicPlayer.playMusic();
+        musicPlayer.playMusic(Ganre.CLASSICALMUSIC);
+        musicPlayer.playMusic(Ganre.ROCKEMUSIC);
+        return "- playing";
     }
 }
